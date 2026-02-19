@@ -1,5 +1,168 @@
-/*This is where your CSS goes*/
-html, body {
-    margin: 0;
-    padding: 0;
+:root {
+  --blue: #1e90ff;
+  --green: #2ecc71;
+  --text: #111;
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --line: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  background: var(--card);
+  border-bottom: 2px solid var(--line);
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--blue);
+}
+
+.nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: var(--green);
+}
+
+.hero {
+  display: flex;
+  gap: 16px;
+  padding: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heroText {
+  flex: 1;
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.heroBox {
+  flex: 1;
+  background: var(--card);
+  border: 1px dashed var(--line);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  color: #666;
+}
+
+.section {
+  padding: 10px 18px 22px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.box,
+.product {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.img {
+  height: 120px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: 700;
+  margin: 6px 0 10px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--blue);
+  color: white;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.btn:hover {
+  background: var(--green);
+}
+
+.btn.small {
+  padding: 8px 10px;
+  font-size: 0.95rem;
+}
+
+.footer {
+  padding: 18px;
+  text-align: center;
+  background: var(--card);
+  border-top: 2px solid var(--line);
+  margin-top: 10px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .nav a {
+    margin-left: 8px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.heroBox img {
+  width: 100%;
+  border-radius: 8px;
 }

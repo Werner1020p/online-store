@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Online Store</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaNova Shop</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <!--This is where your HTML goes-->
+  <header class="header">
+    <h1 class="logo">AquaNova</h1>
+
+    <nav class="nav">
+      <a href="#categories">Categories</a>
+      <a href="#featured">Featured</a>
+      <a href="#footer">Support</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="heroText">
+      <h2>Simple. Clean. Useful.</h2>
+      <p>
+        Welcome to AquaNova - a fictional store homepage.
+      </p>
+      <a class="btn" href="#featured">Shop Featured</a>
+    </div>
+
+    <!-- Optional image placeholder -->
+    <div class="heroBox">
+      <img src="images/heroimage.png" alt="Desk setup">
+    </div>
+
+  </section>
+
+  <section class="section" id="categories">
+    <h2>Categories</h2>
+
+    <div class="grid">
+      <div class="box">
+        <h3>Everyday Carry</h3>
+        <p>Bags, organizers</p>
+      </div>
+
+      <div class="box">
+        <h3>Hydration</h3>
+        <p>Bottles, tumblers</p>
+      </div>
+
+      <div class="box">
+        <h3>Desk Setup</h3>
+        <p>Notebooks, pens</p>
+      </div>
+
+      <div class="box">
+        <h3>Tech</h3>
+        <p>Cables, stands</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="featured">
+    <h2>Featured Products</h2>
+
+    <div class="grid">
+
+      <div class="product">
+        <img src="images/greenwaterbottle.png" alt="Green Water Bottle">
+        <h3>Ocean Bottle</h3>
+        <p class="price">$24</p>
+        <a class="btn small" href="#">Add</a>
+      </div>
+
+      <div class="product">
+        <img src="images/greentotebag.png" alt="Green Tote Bag">
+        <h3>Green Tote Bag</h3>
+        <p class="price">$18</p>
+        <a class="btn small" href="#">Add</a>
+      </div>
+
+      <div class="product">
+        <img src="images/notebook.png" alt="Notebook">
+        <h3>Notebook</h3>
+        <p class="price">$12</p>
+        <a class="btn small" href="#">Add</a>
+      </div>
+
+      <div class="product">
+        <img src="images/cables-stand.png" alt="Phone Stand">
+        <h3>Phone Stand</h3>
+        <p class="price">$19</p>
+        <a class="btn small" href="#">Add</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="footer" id="footer">
+    <p><strong>AquaNova</strong> (fictional) </p>
+    <p>Support: shipping • returns • contact</p>
+  </footer>
 </body>
+
 </html>
